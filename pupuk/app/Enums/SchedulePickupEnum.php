@@ -11,9 +11,13 @@ use MadWeb\Enum\Enum;
  */
 final class SchedulePickupEnum extends Enum
 {
-    const __default = self::FOO;
+    const __default = self::MINGGU;
 
-    const FOO = 0;
-    const BAR = 1;
-    const BAZ = 2;
+    const SENIN = 'Senin';
+    const SELASA = 'Selasa';
+    const RABU = 'Rabu';
+    const KAMIS = 'Kamis';
+    const JUMAT = 'Jumat';
+    const SABTU = 'Sabtu';
+    const MINGGU = 'Minggu';
 }

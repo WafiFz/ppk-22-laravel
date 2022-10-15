@@ -11,9 +11,9 @@ use MadWeb\Enum\Enum;
  */
 final class SampahCategoryEnum extends Enum
 {
-    const __default = self::FOO;
+    const __default = self::CAMPURAN;
 
-    const FOO = 0;
-    const BAR = 1;
-    const BAZ = 2;
+    const ORGANIK = 'Organik';
+    const ANORGANIK = 'Anorganik';
+    const CAMPURAN = 'Campuran';
 }

@@ -1,5 +1,8 @@
 <?php
 
+use App\Enums\SampahCategoryEnum;
+use App\Enums\SampahStatusEnum;
+use App\Enums\SchedulePickupEnum;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -19,9 +22,12 @@ class CreateSampahsTable extends Migration
             $table->string('phone_number');
             $table->text('address');
             $table->text('address_notes');
-            $table->string('sampah_category');  // enum harusnya
-            $table->string('schedule_pickup');  // enum harusnya
-            $table->string('status');           // enum harusnya
+            $table->enum('sampah_category', ['Organik' => SampahCategoryEnum::ORGANIK, 'Anorganik' => SampahCategoryEnum::ANORGANIK, 'Campuran' => SampahCategoryEnum::CAMPURAN]);
+            $table->enum('status', ['Penjemputan baru' => SampahStatusEnum::BARU, 'Proses' => SampahStatusEnum::PROSES, 'Selesai' => SampahStatusEnum::SELESAI, 'Terkendala' => SampahStatusEnum::TERKENDALA, 'Batal' => SampahStatusEnum::BATAL]);
+            $table->enum('schedule_pickup', ['Senin' => SchedulePickupEnum::SENIN, 'Selasa' => SchedulePickupEnum::SELASA, 'Rabu' => SchedulePickupEnum::RABU, 'Kamis' => SchedulePickupEnum::KAMIS, 'Jumat' => SchedulePickupEnum::JUMAT, 'Sabtu' => SchedulePickupEnum::SABTU, 'Minggu' => SchedulePickupEnum::MINGGU]);
+            // $table->string('sampah_category');  // enum harusnya
+            // $table->string('schedule_pickup');  // enum harusnya
+            // $table->string('status');           // enum harusnya
             $table->string('status_description')->nullable();
 
             // FK

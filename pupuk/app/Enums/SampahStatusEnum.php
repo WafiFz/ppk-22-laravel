@@ -11,9 +11,11 @@ use MadWeb\Enum\Enum;
  */
 final class SampahStatusEnum extends Enum
 {
-    const __default = self::FOO;
+    const __default = self::BARU;
 
-    const FOO = 0;
-    const BAR = 1;
-    const BAZ = 2;
+    const BARU = 'Penjemputan baru';
+    const PROSES = 'Proses';
+    const SELESAI = 'Selesai';
+    const TERKENDALA = 'Terkendala';
+    const BATAL = 'Batal';
 }

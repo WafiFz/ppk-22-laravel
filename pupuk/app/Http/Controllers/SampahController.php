@@ -13,14 +13,14 @@ class SampahController extends Controller
     {
         $input = $request->all();
         $input['id'] = Uuid::uuid4()->getHex();
-        $input['user_id'] = Auth::user()->id;
+        // $input['user_id'] = Auth::user()->id;
 
         $sampah = Sampah::create($input);
         return response()->json(
             [
                 'message' => 'Data has been inserted successfully',
                 'data' => $sampah,
-                'info user' => $sampah->user,
+                // 'info user' => $sampah->user,
             ]
         );
     }

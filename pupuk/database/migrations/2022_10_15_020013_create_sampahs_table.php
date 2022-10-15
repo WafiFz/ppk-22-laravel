@@ -31,7 +31,7 @@ class CreateSampahsTable extends Migration
             $table->string('status_description')->nullable();
 
             // FK
-            $table->string('user_id', 32);
+            $table->string('user_id', 32)->nullable();
             $table->timestamps();
         });
     }

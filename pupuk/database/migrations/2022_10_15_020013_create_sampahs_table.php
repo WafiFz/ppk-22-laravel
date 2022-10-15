@@ -23,8 +23,8 @@ class CreateSampahsTable extends Migration
             $table->text('address');
             $table->text('address_notes');
             $table->enum('sampah_category', ['Organik' => SampahCategoryEnum::ORGANIK, 'Anorganik' => SampahCategoryEnum::ANORGANIK, 'Campuran' => SampahCategoryEnum::CAMPURAN]);
-            $table->enum('status', ['Penjemputan baru' => SampahStatusEnum::BARU, 'Proses' => SampahStatusEnum::PROSES, 'Selesai' => SampahStatusEnum::SELESAI, 'Terkendala' => SampahStatusEnum::TERKENDALA, 'Batal' => SampahStatusEnum::BATAL]);
-            $table->enum('schedule_pickup', ['Senin' => SchedulePickupEnum::SENIN, 'Selasa' => SchedulePickupEnum::SELASA, 'Rabu' => SchedulePickupEnum::RABU, 'Kamis' => SchedulePickupEnum::KAMIS, 'Jumat' => SchedulePickupEnum::JUMAT, 'Sabtu' => SchedulePickupEnum::SABTU, 'Minggu' => SchedulePickupEnum::MINGGU]);
+            $table->enum('status', ['PENJEMPUTAN_BARU' => SampahStatusEnum::BARU, 'PROSES' => SampahStatusEnum::PROSES, 'SELESAI' => SampahStatusEnum::SELESAI, 'TERKENDALA' => SampahStatusEnum::TERKENDALA, 'BATAL' => SampahStatusEnum::BATAL]);
+            $table->enum('schedule_pickup', ['SENIN' => SchedulePickupEnum::SENIN, 'SELASA' => SchedulePickupEnum::SELASA, 'RABU' => SchedulePickupEnum::RABU, 'KAMIS' => SchedulePickupEnum::KAMIS, 'JUMAT' => SchedulePickupEnum::JUMAT, 'SABTU' => SchedulePickupEnum::SABTU, 'MINGGU' => SchedulePickupEnum::MINGGU]);
             // $table->string('sampah_category');  // enum harusnya
             // $table->string('schedule_pickup');  // enum harusnya
             // $table->string('status');           // enum harusnya

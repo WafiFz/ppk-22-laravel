@@ -22,7 +22,7 @@ class CreatePupuksTable extends Migration
             $table->decimal('quantity');
             $table->string('total_price');
             // $table->string('status');       // Harusnya Enum
-            $table->enum('status', ['Pesanan Baru' => PupupStatusEnum::BARU, 'Proses' => PupupStatusEnum::PROSES, 'Selesai' => PupupStatusEnum::SELESAI, 'Terkendala' => PupupStatusEnum::TERKENDALA, 'Batal' => PupupStatusEnum::BATAL])->default(PupupStatusEnum::BARU);
+            $table->enum('status', ['PESANAN_BARU' => PupupStatusEnum::BARU, 'PROSES' => PupupStatusEnum::PROSES, 'SELESAI' => PupupStatusEnum::SELESAI, 'TERKENDALA' => PupupStatusEnum::TERKENDALA, 'BATAL' => PupupStatusEnum::BATAL])->default(PupupStatusEnum::BARU);
             $table->string('status_description')->nullable();
             $table->timestamps();
         });

@@ -13,9 +13,9 @@ final class PupupStatusEnum extends Enum
 {
     const __default = self::BARU;
 
-    const BARU = 'Pesanan baru';
-    const PROSES = 'Proses';
-    const SELESAI = 'Selesai';
-    const TERKENDALA = 'Terkendala';
-    const BATAL = 'Batal';
+    const BARU = 'PESANAN_BARU';
+    const PROSES = 'PROSES';
+    const SELESAI = 'SELESAI';
+    const TERKENDALA = 'TERKENDALA';
+    const BATAL = 'BATAL';
 }

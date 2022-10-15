@@ -20,26 +20,28 @@ use App\Http\Controllers\SampahController;
 // Login Register User & Admin
 Route::post('/register', [UserController::class, 'register']);
 Route::post('/login', [UserController::class, 'login']);
-Route::post('/registerAdmin', [AdminController::class, 'register']);
-Route::post('/loginAdmin', [AdminController::class, 'login']);
+Route::post('/admin/register', [AdminController::class, 'register']);
+Route::post('/admin/login', [AdminController::class, 'login']);
+
+//Pupuk - without auth
+Route::post('/v2/pupuk', [PupukController::class, 'create']);
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [UserController::class, 'logout']);
-    Route::post('/logoutAdmin', [AdminController::class, 'logout']);
+    Route::post('/admin/logout', [AdminController::class, 'logout']);
 
-    // Pupuk 
-    Route::post('/v2pupuk', [PupukController::class, 'create']);
-    Route::get('/v2pupuk', [PupukController::class, 'view']);
-    Route::get('/v2pupuk', [PupukController::class, 'view']);
-    Route::get('/v2pupuk/{id}', [PupukController::class, 'viewByID']);
-    Route::put('/v2pupuk/{id}', [PupukController::class, 'updateByID']);
-    Route::delete('/v2pupuk/{id}', [PupukController::class, 'deleteByID']);
+    // Pupuk   
+    Route::get('/v2/pupuk', [PupukController::class, 'view']);
+    Route::get('/v2/pupuk', [PupukController::class, 'view']);
+    Route::get('/v2/pupuk/{id}', [PupukController::class, 'viewByID']);
+    Route::put('/v2/pupuk/{id}', [PupukController::class, 'updateByID']);
+    Route::delete('/v2/pupuk/{id}', [PupukController::class, 'deleteByID']);
 
     // Sampah
-    Route::post('/v2sampah', [SampahController::class, 'create']);
-    Route::get('/v2sampah', [SampahController::class, 'view']);
-    Route::get('/v2sampah', [SampahController::class, 'view']);
-    Route::get('/v2sampah/{id}', [SampahController::class, 'viewByID']);
-    Route::put('/v2sampah/{id}', [SampahController::class, 'updateByID']);
-    Route::delete('/v2sampah/{id}', [SampahController::class, 'deleteByID']);
+    Route::post('/v2/sampah', [SampahController::class, 'create']);
+    Route::get('/v2/sampah', [SampahController::class, 'view']);
+    Route::get('/v2/sampah', [SampahController::class, 'view']);
+    Route::get('/v2/sampah/{id}', [SampahController::class, 'viewByID']);
+    Route::put('/v2/sampah/{id}', [SampahController::class, 'updateByID']);
+    Route::delete('/v2/sampah/{id}', [SampahController::class, 'deleteByID']);
 });

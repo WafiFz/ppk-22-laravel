@@ -21,7 +21,6 @@ class AdminController extends Controller
             'password' => 'required',
             'c_password' => 'required|same:password',
             'phone_number' => 'required',
-            'profile_picture' => 'required',
         ]);
 
         if ($validator->fails()) {

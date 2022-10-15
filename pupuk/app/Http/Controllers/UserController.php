@@ -20,10 +20,8 @@ class UserController extends Controller
             'password' => 'required',
             'c_password' => 'required|same:password',
             'phone_number' => 'required',
-            'profile_picture' => 'required',
             'rt' => 'required',
             'rw' => 'required',
-            'region' => 'required',
         ]);
 
         if ($validator->fails()) {

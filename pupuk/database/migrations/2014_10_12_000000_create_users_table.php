@@ -17,13 +17,13 @@ class CreateUsersTable extends Migration
             $table->string('id', 32)->primary();
             $table->string('name');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();     //
+            // $table->timestamp('email_verified_at')->nullable();     //
             $table->string('password');
             $table->string('phone_number');
-            $table->string('profile_picture');
+            $table->string('profile_picture')->nullable();
             $table->string('rt');
             $table->string('rw');
-            $table->string('region');
+            $table->string('region')->default("Desa Jatimukti, Kecamatan Jatinangor, Kabupaten Sumedang, Jawa Barat");
             $table->rememberToken();
             $table->timestamps();
         });

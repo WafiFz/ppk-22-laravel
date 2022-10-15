@@ -13,9 +13,9 @@ final class SampahStatusEnum extends Enum
 {
     const __default = self::BARU;
 
-    const BARU = 'Penjemputan baru';
-    const PROSES = 'Proses';
-    const SELESAI = 'Selesai';
-    const TERKENDALA = 'Terkendala';
-    const BATAL = 'Batal';
+    const BARU = 'PENJEMPUTAN_BARU';
+    const PROSES = 'PROSES';
+    const SELESAI = 'SELESAI';
+    const TERKENDALA = 'TERKENDALA';
+    const BATAL = 'BATAL';
 }

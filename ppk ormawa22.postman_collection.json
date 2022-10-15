@@ -1,0 +1,645 @@
+{
+	"info": {
+		"_postman_id": "2ddcc58e-b5bb-4497-813a-fcb2aea3f4c8",
+		"name": "ppk ormawa22",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18487237"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Logout User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "admin1",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "addBasi",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "adminadmin123",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "adminadmin123",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "87720490872",
+							"type": "text"
+						},
+						{
+							"key": "profile_picture",
+							"value": "text",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/registerAdmin",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"registerAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "addBasi",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "adminadmin123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/loginAdmin",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"loginAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logoutAdmin",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logoutAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "v2 Pupuk",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/pupuk",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pupuk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "v2 Pupuk",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v2pupuk",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v2pupuk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "v2 Pupuk By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|CElaJxZQOO5XTa7Gf7WroE4tx1c41bpqEKRILhnk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v2pupuk/6a546bb1bced434caccae3066bbd5cb7",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v2pupuk",
+						"6a546bb1bced434caccae3066bbd5cb7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "v2 pupuk By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|CElaJxZQOO5XTa7Gf7WroE4tx1c41bpqEKRILhnk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "evita dwi",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "87720490872",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "graha cipageran",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "total_price",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "status_descripion",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v2pupuk/6a546bb1bced434caccae3066bbd5cb7",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v2pupuk",
+						"6a546bb1bced434caccae3066bbd5cb7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "v2 Pupuk By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|CElaJxZQOO5XTa7Gf7WroE4tx1c41bpqEKRILhnk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v2pupuk/8cf937821ffa47069bd922466cdabd9f",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v2pupuk",
+						"8cf937821ffa47069bd922466cdabd9f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "v2 Sampah",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|CElaJxZQOO5XTa7Gf7WroE4tx1c41bpqEKRILhnk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "d",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "a",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "aa",
+							"type": "text"
+						},
+						{
+							"key": "address_notes",
+							"value": "ddada",
+							"type": "text"
+						},
+						{
+							"key": "sampah_category",
+							"value": "dd",
+							"type": "text"
+						},
+						{
+							"key": "schedule_pickup",
+							"value": "eeeeeee",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "aae",
+							"type": "text"
+						},
+						{
+							"key": "status_description",
+							"value": "ee",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v2sampah",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v2sampah"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "v2 Sampah",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|CElaJxZQOO5XTa7Gf7WroE4tx1c41bpqEKRILhnk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v2sampah",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v2sampah"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "v2 Sampah By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|CElaJxZQOO5XTa7Gf7WroE4tx1c41bpqEKRILhnk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v2sampah/5a5782d722224f9d89185e962cffcee7",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v2sampah",
+						"5a5782d722224f9d89185e962cffcee7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "v2 Sampah By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|CElaJxZQOO5XTa7Gf7WroE4tx1c41bpqEKRILhnk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "botol aqua",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address_notes",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sampah_category",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "schedule_pickup",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "status_description",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v2sampah/5a5782d722224f9d89185e962cffcee7",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v2sampah",
+						"5a5782d722224f9d89185e962cffcee7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "v2 Sampah By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|CElaJxZQOO5XTa7Gf7WroE4tx1c41bpqEKRILhnk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v2sampah/5a5782d722224f9d89185e962cffcee7",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v2sampah",
+						"5a5782d722224f9d89185e962cffcee7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

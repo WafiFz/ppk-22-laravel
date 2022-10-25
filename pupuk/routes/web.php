@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    echo "test";
+    // return view('welcome');
 });
+
+Route::get('/must_login', function () {
+    echo "Login terlebih dahulu";
+    // return view('welcome');
+})->name('must_login');

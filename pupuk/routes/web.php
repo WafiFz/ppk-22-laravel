@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    echo "test";
+    echo "api ppk ormawa fkep 2022";
     // return view('welcome');
 });
 
